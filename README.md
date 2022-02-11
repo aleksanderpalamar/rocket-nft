@@ -50,7 +50,7 @@ O **Rocket NFTs** é uma aplicação Web.
   # Instalando as dependências do projeto.
   $ yarn # ou npm install
   # Inicie a aplicação web
-  $ yarn start # ou npm start
+  $ yarn dev # ou npm dev
 ```
 
 ---
