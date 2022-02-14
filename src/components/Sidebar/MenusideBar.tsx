@@ -26,7 +26,7 @@ export function MenusideBar() {
           <Link href="/sobre">
             <a>Sobre</a>
           </Link>
-          <Link href="/contato">
+          <Link href="/faqs">
             <a>FAQs</a>
           </Link>
         </>
