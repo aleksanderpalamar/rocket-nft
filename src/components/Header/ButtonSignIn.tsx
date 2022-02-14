@@ -8,7 +8,7 @@ export function ButtonSignIn() {
   return (
     <>
       <Box
-        as="button"        
+        as="button"
         color="red.700"
         fontSize={isMobileVersion ? "lg" : "xl"}
         fontWeight="semibold"

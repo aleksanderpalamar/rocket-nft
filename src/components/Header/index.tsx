@@ -1,8 +1,7 @@
 import {
   IconButton,
   Flex,
-  useBreakpointValue,
-  useMediaQuery,
+  useBreakpointValue,  
   Icon,
 } from "@chakra-ui/react";
 

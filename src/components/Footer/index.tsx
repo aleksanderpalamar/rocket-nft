@@ -8,7 +8,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { Input } from "../Form";
+import { Input } from "../Form/Input";
 import { Logo } from "../Header/Logo";
 import { NavSection } from "../Sidebar/NavSection";
 
