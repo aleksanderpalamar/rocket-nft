@@ -49,7 +49,7 @@ export default function Faq() {
                 color: "red.500",
               }}
             >
-              Qual a relação entre criptomoedas e os NFTs?
+              Como criar um NFT?
             </Tab>
             <Tab
               _selected={{
@@ -59,8 +59,9 @@ export default function Faq() {
                 color: "red.500",
               }}
             >
-              Qual a relação entre os games e os NFTs?
+              Qual a relação entre criptomoedas e os NFTs?
             </Tab>
+
             <Tab
               _selected={{
                 color: "red.500",
@@ -91,32 +92,41 @@ export default function Faq() {
             </TabPanel>
             <TabPanel>
               <p>
+                Qualquer pessoa pode criar um NFT. E você pode criá-lo a partir
+                de qualquer coisa. Tirou uma fotografia bonita de uma paisagem?
+                Pode criar um NFT para atestar a originalidade do arquivo da
+                imagem — para os mais velhos, seria o equivalente ao negativo da
+                foto.
+              </p>
+              <p>
+                O passo a passo básico para criar um token não fungível é o
+                seguinte:{" "}
+              </p>
+              <p>
+                <p>1. Escolha a plataforma (a mais popular é a Ethereum)</p>
+                <p>
+                  2. Configure sua carteira digital (a mais usada é a MetaMask)
+                </p>
+                <p>
+                  3. Transfira dinheiro para essa carteira e pague o custo de
+                  mineração (para poder criar a NFT).
+                </p>
+                <p>
+                  4. Selecione a plataforma de marketplace para vender o NFT (a
+                  mais usada é a OpenSea).{" "}
+                </p>
+                <p>5. Faça o upload do arquivo.</p>
+                <p>6. Determine o preço do NFT (pode ser fixo ou por leilão)</p>
+              </p>
+            </TabPanel>
+            <TabPanel>
+              <p>
                 Assim como as criptomoedas, os NFTs existem dentro do universo
                 do blockchain, um banco de dados público e imutável, em uma rede
                 descentralizada com regras preestabelecidas. Além disso, os NFTs
                 são negociados em criptomoedas. Isto é, para comprar esse tipo
                 de ativo, você precisa antes adquirir uma moeda digital (as
                 moedas aceitas variam de acordo com o marketplace).
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <p>
-                O mercado dos games é talvez o mais promissor para a exploração
-                dos NFTs, e aquele em que os ativos mais fazem sentido do ponto
-                de vista prático. Estamos falando de uma opção de entretenimento
-                que ocorre no ambiente virtual e que tem um enorme público ávido
-                por exclusividade e diferenciação. Imagine ser o único jogador
-                de um game super popular com determinado personagem ou
-                equipamento. Isso pode representar uma vantagem competitiva no
-                game e, mais do que isso, ser um imenso fator de diferenciação,
-                porque nenhum outro jogador terá a feature que você adquiriu. A
-                não ser que você venda o NFT. Afinal, depois de criado o NFT, o
-                desenvolvedor não pode alterar suas características, o que o
-                torna um item raro, com potencial de revenda. Ainda há desafios
-                técnicos e de modelo de negócio para que isso seja difundido
-                amplamente na indústria dos games, mas já há vários jogos feitos
-                na blockchain em que os jogadores podem ganhar NFTs como
-                premiação pelo seu desempenho.
               </p>
             </TabPanel>
             <TabPanel>
