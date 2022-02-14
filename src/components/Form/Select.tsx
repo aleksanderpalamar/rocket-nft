@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { forwardRef, ForwardRefRenderFunction } from "react";
 import {
   FormControl,
@@ -40,11 +41,7 @@ const SelectBase: ForwardRefRenderFunction<HTMLInputElement, SelectProps> = ({
           size="lg"
           {...rest}
         >
-          {options.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
+          {options && options.map((option) => <option>{option}</option>)}          
         </ChakraSelect>
         {!!error && <FormErrorMessage>{error.message}</FormErrorMessage>}
       </FormControl>
