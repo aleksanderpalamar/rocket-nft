@@ -29,7 +29,7 @@ export default function Faq() {
         height="100vh"
         alignItems="start"
       >
-        <Tabs defaultIndex={1} align="start" variant="enclosed">
+        <Tabs defaultIndex={0} align="start" variant="enclosed">
           <TabList>
             <Tab
               fontSize={["sm", "md"]}
