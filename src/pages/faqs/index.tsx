@@ -5,11 +5,11 @@ import {
   TabPanels,
   Tabs,
   TabPanel as ChakraTabPanel,
+  Flex,
 } from "@chakra-ui/react";
 
 import { Heading } from "../../components/Heading";
 //import { TabPanel } from "../../components/TabPanel";
-import { StyleFlex } from "./StyleFlex";
 
 export default function Faq() {
   return (
@@ -18,7 +18,17 @@ export default function Faq() {
         <title>FAQs | Rocket NFTs</title>
       </Head>
       <Heading title="FAQ's " />
-      <StyleFlex>
+      <Flex
+        w="100%"
+        d="flex"
+        maxW={1280}
+        px={["4", "4", "8"]}
+        py={["4", "4", "8"]}
+        mx="auto"
+        justifyContent="start"
+        height="100vh"
+        alignItems="start"
+      >
         <Tabs defaultIndex={1} align="start" variant="enclosed">
           <TabList>
             <Tab
@@ -127,7 +137,7 @@ export default function Faq() {
             </ChakraTabPanel>
           </TabPanels>
         </Tabs>
-      </StyleFlex>
+      </Flex>
     </>
   );
 }
