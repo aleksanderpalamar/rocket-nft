@@ -20,7 +20,7 @@ export function NavLink({ icon, children, href, ...rest }: NavLinkProps) {
   });
 
   return (
-    <ChakraLink display="flex" align="center" justify="center" {...rest}>
+    <ChakraLink href={href} display="flex" align="center" justify="center" {...rest}>
       {isMobileVersion && <Icon as={icon} fontSize={["2xl", "3xl"]} />}
       <Text
         ml={["1", "4"]}

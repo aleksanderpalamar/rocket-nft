@@ -1,7 +1,16 @@
 /* eslint-disable @next/next/link-passhref */
-import { Box, Divider, Flex, Heading, HStack, Img, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Flex,
+  Img,
+  Stack,
+  Text,
+  
+} from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
+import { Heading } from "../../components/Heading";
 
 export default function Sobre() {
   return (
@@ -20,31 +29,19 @@ export default function Sobre() {
         height="100vh"
         alignItems="center"
       >
-        <Box as="aside">
-          <Text fontSize="5xl" fontWeight="bold" display="flex">
-            10k
-            <Text fontSize="4xl" fontWeight="medium">
-              +
-            </Text>
+        <Box>
+          <Text fontSize={["2xl", "3xl"]} fontWeight="bold">
+            10K<Text as="span">+</Text>            
           </Text>
-          <Text fontSize="2xl" fontWeight="medium" color="gray.500">
-            Colecionáveis
+          <Text as="span" fontSize="md" color="gray.500">Artes</Text>
+          <Text fontSize={["2xl", "3xl"]} fontWeight="bold">
+            200<Text as="span">+</Text>           
           </Text>
-          <Text fontSize="5xl" fontWeight="bold" display="flex">
-            200k
-            <Text fontSize="4xl" fontWeight="medium">
-              +
-            </Text>
-          </Text>
-          <Text fontSize="2xl" fontWeight="medium" color="gray.500">
-            Vendas
-          </Text>
-          <Text fontSize="5xl" fontWeight="bold">
+          <Text as="span" fontSize="md" color="gray.500">Vendas</Text>
+          <Text fontSize={["2xl", "3xl"]} fontWeight="bold">
             20
           </Text>
-          <Text fontSize="2xl" fontWeight="medium" color="gray.500">
-            Artistas
-          </Text>
+          <Text as="span" fontSize="md" color="gray.500">Artistas</Text>          
         </Box>
         <Divider
           orientation="vertical"
@@ -56,36 +53,40 @@ export default function Sobre() {
           mr="4"
         />        
         <Flex d="block">
-          <HStack mb="8">
-          <Box>
-            <Text as="p" fontSize="lg" fontWeight="light" mb="4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-              malesuada amet pretium lacus. Id
-              <Text color="red.500">potenti diam</Text> et cras odio viverra.
-              Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
-            </Text>
-            <Link href="/">
-              <Text as="a" cursor="pointer" color="red.500">
-                Ler mais...
+        <Heading title="Sobre"/>
+          <Stack mb="8" flexDirection={["column", "row"]}>
+            <Box>
+              <Text as="p" fontSize={["sm", "md"]} fontWeight="light" mb="4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
+                malesuada amet pretium lacus. Id
+                <Text color="red.500">potenti diam</Text> et cras odio viverra.
+                Amet, velit ut hac sit. Enim ultricies mauris mattis nunc
+                semper.
               </Text>
-            </Link>
-          </Box>
-          <Box>
-            <Text as="p" fontSize="lg" fontWeight="light" mb="4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-              malesuada amet pretium lacus. Id
-              <Text color="red.500">potenti diam</Text> et cras odio viverra.
-              Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
-            </Text>
-            <Link href="/">
-              <Text as="a" cursor="pointer" color="red.500">
-                Ler mais...
+              <Link href="/">
+                <Text as="a" cursor="pointer" color="red.500">
+                  Ler mais...
+                </Text>
+              </Link>
+            </Box>
+            <Box>
+              <Text as="p" fontSize={["sm", "md"]} fontWeight="light" mb="4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
+                malesuada amet pretium lacus. Id
+                <Text color="red.500">potenti diam</Text> et cras odio viverra.
+                Amet, velit ut hac sit. Enim ultricies mauris mattis nunc
+                semper.
               </Text>
-            </Link>
-          </Box>
-          </HStack>
+              <Link href="/">
+                <Text as="a" cursor="pointer" color="red.500">
+                  Ler mais...
+                </Text>
+              </Link>
+            </Box>
+          </Stack>
+
           <Img src="/images/banner.svg" />
-        </Flex>        
+        </Flex>
       </Flex>
     </>
   );
