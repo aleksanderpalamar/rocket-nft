@@ -1,11 +1,19 @@
 import { Box, Flex, Img,  Text } from "@chakra-ui/react";
-import type { NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 
 import { ImagesGallery } from "../components/ImagesGallery";
 import { Banner } from "../components/Banner";
+import { client, ssrCache } from "../lib/urql";
+import { usePageQuery, PageDocument } from "../generated/graphql"
 
 const Home: NextPage = () => {
+  const [{ data }] = usePageQuery({
+    variables: {
+      slug: "home"      
+    }
+  });
+
   return (
     <>
       <Head>
@@ -31,7 +39,7 @@ const Home: NextPage = () => {
         justifyContent="space-between"
       >
         <Box as="section">
-          <Banner />
+          <Banner title={data?.page?.title} subtitle={data?.page?.subtitle}/>
           <ImagesGallery />
         </Box>
       </Flex>
@@ -40,3 +48,13 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  await client.query(PageDocument, { slug: "home" }).toPromise();
+
+  return {
+    props: {
+      urqlState: ssrCache.extractData()
+    }
+  }
+};

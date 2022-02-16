@@ -29,6 +29,9 @@ export function MenusideBar() {
           <Link href="/faqs">
             <a>FAQs</a>
           </Link>
+          <Link href="/blog">
+            <a>Blog</a>
+          </Link>
         </>
       )}
 
@@ -37,6 +40,7 @@ export function MenusideBar() {
           <NavSection title="EMPRESA">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/sobre">Sobre</NavLink>
+            <NavLink href="/blog">Blog</NavLink>
             <NavLink href="/time">Time</NavLink>
             <NavLink href="/carreira">Carreira</NavLink>
           </NavSection>

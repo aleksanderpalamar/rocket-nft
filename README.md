@@ -26,6 +26,8 @@ O **Rocket NFTs** é uma aplicação Web.
 - [Typescript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
 - [Chakra-ui](https://chakra-ui.com/)
+- [GrapgQL](https://graphql.org/)
+- [GraphCMS](https://www.graphcms.com/)
 
 ## Como Executar
 
